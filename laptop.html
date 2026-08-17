@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABBANIIS LAPTOP |   BUY QUALITY LAPTOPS</title>
+    <link rel="stylesheet" href="DESIGN.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">ABBANIIS<span>LAPTOP</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#laptops">Laptops</a>
+            <a href="#payment">Payment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="small-title">PREMIUM LAPTOP STORE</p>
+            <h1>Find Your <span>Perfect Laptop</span></h1>
+
+            <p>
+                Shop quality laptops at affordable prices.
+                Choose your laptop, provide your details and place your order.
+            </p>
+
+            <a href="#laptops" class="hero-btn">SHOP LAPTOPS</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+                 alt="Laptop">
+        </div>
+    </section>
+
+    <!-- LAPTOPS -->
+    <section class="products" id="laptops">
+
+        <div class="section-title">
+            <p>OUR COLLECTION</p>
+            <h2>Featured Laptops</h2>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- LAPTOP 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80"
+                         alt="HP Laptop">
+                </div>
+
+                <div class="product-info">
+                    <h3>HP EliteBook</h3>
+                    <p>Intel Core i5 • 8GB RAM • 256GB SSD</p>
+
+                    <div class="price">₦350,000</div>
+
+                    <button onclick="selectLaptop('HP EliteBook', '₦350,000')">
+                        BUY NOW
+                    </button>
+                </div>
+            </div>
+
+            <!-- LAPTOP 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=700&q=80"
+                         alt="Dell Laptop">
+                </div>
+
+                <div class="product-info">
+                    <h3>Dell Latitude</h3>
+                    <p>Intel Core i7 • 16GB RAM • 512GB SSD</p>
+
+                    <div class="price">₦520,000</div>
+
+                    <button onclick="selectLaptop('Dell Latitude', '₦520,000')">
+                        BUY NOW
+                    </button>
+                </div>
+            </div>
+
+            <!-- LAPTOP 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=700&q=80"
+                         alt="MacBook">
+                </div>
+
+                <div class="product-info">
+                    <h3>MacBook Pro</h3>
+                    <p>Apple M2 • 16GB RAM • 512GB SSD</p>
+
+                    <div class="price">₦1,250,000</div>
+
+                    <button onclick="selectLaptop('MacBook Pro', '₦1,250,000')">
+                        BUY NOW
+                    </button>
+                </div>
+            </div>
+
+            <!-- LAPTOP 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=700&q=80"
+                         alt="Lenovo Laptop">
+                </div>
+
+                <div class="product-info">
+                    <h3>Lenovo ThinkPad</h3>
+                    <p>Intel Core i5 • 8GB RAM • 512GB SSD</p>
+
+                    <div class="price">₦430,000</div>
+
+                    <button onclick="selectLaptop('Lenovo ThinkPad', '₦430,000')">
+                        BUY NOW
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ORDER SECTION -->
+    <section class="order-section" id="payment">
+
+        <div class="section-title">
+            <p>PLACE YOUR ORDER</p>
+            <h2>Customer & Payment Details</h2>
+        </div>
+
+        <div class="order-container">
+
+            <div class="payment-box">
+
+                <h3>Payment Information</h3>
+
+                <p>
+                    After selecting your laptop, make payment using the
+                    account details below.
+                </p>
+
+                <div class="account">
+                    <span>Bank/Platform</span>
+                    <strong>OPay</strong>
+                </div>
+
+                <div class="account">
+                    <span>Account Number</span>
+                    <strong>8106417282</strong>
+                </div>
+
+                <div class="account">
+                    <span>WhatsApp</span>
+                    <strong>08106417282</strong>
+                </div>
+
+                <div class="notice">
+                    ⚠️ Please provide your customer details before placing
+                    an order.
+                </div>
+
+            </div>
+
+
+            <!-- CUSTOMER FORM -->
+            <div class="form-box">
+
+                <h3>Customer Details</h3>
+
+                <form id="orderForm">
+
+                    <label>Full Name</label>
+                    <input type="text"
+                           id="name"
+                           placeholder="Enter your full name"
+                           required>
+
+                    <label>Phone Number</label>
+                    <input type="tel"
+                           id="phone"
+                           placeholder="Enter your phone number"
+                           required>
+
+                    <label>Email Address</label>
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email"
+                           required>
+
+                    <label>Delivery Address</label>
+                    <textarea id="address"
+                              placeholder="Enter your complete delivery address"
+                              required></textarea>
+
+                    <label>Selected Laptop</label>
+                    <input type="text"
+                           id="selectedLaptop"
+                           placeholder="Select a laptop above"
+                           readonly
+                           required>
+
+                    <label>Payment Reference</label>
+                    <input type="text"
+                           id="paymentReference"
+                           placeholder="Enter payment reference"
+                           required>
+
+                    <button type="submit" id="orderButton" disabled>
+                      ORDER COMPLETE
+                    </button>
+
+                </form>
+
+                <p id="message"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>NEED HELP?</h2>
+
+        <p>
+            Contact ABBANIIS LAPTOP on WhatsApp for enquiries,
+            laptop availability and delivery information.
+        </p>
+
+        <a href="https://wa.me/2348106417282"
+           target="_blank"
+           class="whatsapp">
+            💬 CHAT ON WHATSAPP
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>ABBANIIS LAPTOP</h3>
+
+        <p>Quality laptops, Affordable prices, Reliable service.</p>
+
+        <p>
+            WhatsApp: 08106417282
+        </p>
+
+        <p class="copyright">
+            © 2026 ABBANIIS LAPTOP. All RIGHTS RESERVED.
+        </p>
+    </footer>
+
+
+     <script src="sss.js"></script>
+   
+
+</body>
+</html>
